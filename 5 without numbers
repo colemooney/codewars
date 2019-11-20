@@ -1,0 +1,7 @@
+function unusualFive() {
+  
+  let value = "value"
+
+  return value.length
+
+}
