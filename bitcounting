@@ -1,0 +1,11 @@
+function countBits(dec){
+   let final = (dec >>> 0).toString(2);
+   console.log(final)
+   let counter = 0;
+   for (let j = 0; j < final.length; j++){
+     if(final.charAt(j) == 1){
+       counter++ ;
+     }
+   }
+   return counter
+}
