@@ -1,0 +1,12 @@
+var uniqueInOrder=function(iterable) {
+  var done
+  var final = []
+  for (var i = 0; i < iterable.length; i++) {
+    if (iterable[i] !== done) {
+      final.push(done = iterable[i])
+    }}
+  return final
+}
+
+
+uniqueInOrder('AAAABBBCCDAABBB')
