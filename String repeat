@@ -1,0 +1,15 @@
+function repeatStr (n, s) {
+ let final = '';
+    for(let i = 0; i < n; i++){
+      final += s
+    }
+  return final;
+}
+
+
+repeatStr(5, "*")
+
+
+
+details:
+Write a function called repeatString which repeats the given String src exactly count times.
