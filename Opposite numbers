@@ -1,0 +1,16 @@
+function opposite(number) {
+  if(number < 0){
+    return number * -1
+  }
+  if(number > 0){
+    return number * -1 
+  }
+  if(number == 0){
+    return 0
+  }
+}
+
+opposite(1)
+
+directions:
+Very simple, given a number, find its opposite.
