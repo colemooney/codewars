@@ -1,0 +1,9 @@
+function makeUpperCase(str) {
+ let strArr = str.split("")
+return strArr.join('').toUpperCase()
+}
+
+makeUpperCase("hello")
+
+instructions:
+Write function makeUpperCase.
