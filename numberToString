@@ -1,0 +1,9 @@
+function numberToString(num) {
+ return num.toString()
+}
+
+numberToString(67)
+
+instructions:
+We need a function that can transform a number into a string.
+
