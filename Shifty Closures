@@ -1,0 +1,9 @@
+//Variable scope issues meant that these name variables must be different
+var nameOne = 'Abe';
+var greet_abe = function() {
+  return "Hello, " + nameOne + '!';
+};
+var name = 'Ben';
+var greet_ben = function() {
+  return "Hello, " + name + '!';
+};
