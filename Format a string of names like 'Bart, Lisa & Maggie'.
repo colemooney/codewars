@@ -1,0 +1,18 @@
+function list(names){
+// set string to ''
+  let str = '';
+  if (names.length !== 0) {
+	// take off last object
+    let simpson = names.pop();
+		// add objects to string
+    str = names.map( (val, i, arr) => {
+      if (i !== arr[arr.length - 1]) {
+        return val.name;
+      }
+    }).join(', ')
+     // add last object and &
+    str += str !== '' ? ' & ' + simpson.name : simpson.name;
+  }
+   // return string
+  return str;
+}
