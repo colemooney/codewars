@@ -1,0 +1,5 @@
+function filter_list(l) {
+//fancy es6 function to filter out anything that isn't a number
+  return l.filter(x => typeof x === "number");
+}
+console.log(filter_list([1,2,'a','b'])) // return [1,2]
