@@ -1,0 +1,28 @@
+function digital_root(n) {
+  let n = n + '';
+  var output = [];
+  var tempNum;
+  var sum = 0;
+
+  for (var i = 0; i < n.length; i++) {
+    if (n[i] === '-') {
+        tempNum = n[i] + n[i + 1];
+        i++;
+    } else {
+      tempNum = n[i];
+    }
+    
+    output.push(parseInt(tempNum, 10));
+  }
+  
+  
+  for (var j = 0; j < output.length; j++) {
+    sum = sum + output[j];
+  }
+
+  return sum;
+}
+}
+
+var output = sumDigits(1234);
+console.log(output);
