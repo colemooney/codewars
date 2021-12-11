@@ -1,0 +1,14 @@
+function findShort(s){
+//split to array of substrings
+  var words = s.split(' ');
+//adds each substring together
+  var shortest = words.reduce((shortestWord, currentWord) => {
+//assigns shortest word to variable
+    return currentWord.length < shortestWord.length ? currentWord : shortestWord;
+  }, words[0]);
+//returns the word or its length
+  return shortest.length;
+  
+}
+
+console.log(findShortestWord("turns out random test cases are easier than writing out basic ones")); // returns 3
