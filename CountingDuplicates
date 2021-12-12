@@ -1,0 +1,8 @@
+function duplicateCount(text){
+//filter through sting
+  return text.toLowerCase().split('').filter(function(val, i, arr){
+  //returns length of array with words added through filter
+    return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+  }).length;
+}
+console.log(duplicateCount("Indivisibilities")); // returns 2
